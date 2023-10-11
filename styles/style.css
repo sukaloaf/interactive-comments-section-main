@@ -183,6 +183,6 @@ input[type="checkbox"] {
   transition: 0.5s;
 }
 
-input:checked + toggle-label:after {
-  transform: translateX(160%);
+input:checked + #toggle-label::after {
+  transform: translateX(135%);
 }

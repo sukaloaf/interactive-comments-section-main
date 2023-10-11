@@ -1,0 +1,4 @@
+body.light-mode {
+  background-color: var(--very-light-gray);
+  color: var(--grayish-blue);
+}
