@@ -2,6 +2,83 @@
   position: fixed;
   top: 1.5rem;
   left: 2rem;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--dark-gray);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menu-contents {
+  display: none;
+  margin-top: 3rem;
+  width: 10rem;
+  border: 1px solid var(--almost-black);
+}
+
+/* light/dark mode toggle */
+.toggle-container {
+  background-color: (--almost-black);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5rem;
+  width: 100%;
+}
+
+#day-night-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+#moon-icon {
+  height: 30px;
+  width: auto;
+}
+
+#sun-icon {
+  height: 30px;
+  width: auto;
+}
+
+#toggle-switch {
+  height: 20px;
+  width: 2.5rem;
+}
+
+#toggle-label {
+  background-color: var(--dark-gray);
+  border: 1px solid var(--gray3);
+  border-radius: 4rem;
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: 0.5s;
+}
+
+#toggle-label::after {
+  content: "";
+  background-color: var(--white);
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  transition: 0.5s;
+}
+
+input:checked + #toggle-label::after {
+  transform: translateX(135%);
 }
