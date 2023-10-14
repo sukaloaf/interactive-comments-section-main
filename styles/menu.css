@@ -12,8 +12,22 @@
 .menu-contents {
   display: none;
   margin-top: 3rem;
-  width: 10rem;
+  width: 12rem;
   border: 1px solid var(--almost-black);
+}
+
+/* Avatar Icons */
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.75rem 0 0.75rem 0;
+  padding: 0 0.4rem 0 0.4rem;
+  text-decoration: none;
+}
+
+.menu-item p {
+  color: var(--grayish-blue);
 }
 
 /* light/dark mode toggle */
